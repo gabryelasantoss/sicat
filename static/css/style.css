@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0px;
+}
+
+
+/*header*/
+header{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(105deg, #001A5D 27.56%, #0037C3 78.25%, #0051EF 99.41%);
+    height: 750px;
+    color: white;
+    padding: 42px 120px 0px 120px;
+
+}
+
+nav ul li{
+    font-family: "Open Sans";
+    list-style: none;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 10px 27px;
+    margin-bottom: 24px;
+}
+
+nav ul li:hover{
+    background-color: white;
+    color: #28001E;
+    border-radius: 20px;
+}
+
+.hero-section{
+    width: 995px;
+    margin: auto;
+
+}
+.hero-section .titulo{
+    font-family: Montserrat;
+}
+.hero-section h1{
+    font-size: 96px;
+    font-weight: 800;
+}
+.hero-section h2{
+    color:#CCC;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.hero-section p{
+    margin:32px 0 88px 0;
+    font-family: "Open Sans";
+    font-size: 20px;
+}
+
+
+h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+
+.cta{
+    border:none;
+    text-decoration: none;
+    color: #28001E;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #00DB3E;
+}
+
+.cta:hover{
+    padding: 15px;
+    background-color: white;
+    border: solid #00DB3E 5px;
+}
+
+.navegacao{
+    justify-content: space-between;
+}
+
+/*main*/
+main{
+    font-family: Montserrat;
+    color: #28001E;
+    font-weight: 500;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h3{
+    font-size: 40px;
+    margin: 64px 0 48px 0;
+}
+
+main h4{
+    font-size: 20px;
+}
+
+main p{
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card{
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+    border: 2px solid #001A5D;
+    padding:2px;
+}
+.funcionalidades{
+    width: 995px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 42px;
+}
+
+section{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sobre p{
+    text-align: left;
+    width: 378px;
+    font-size: 24px;
+}
+
+/* footer */
+footer{
+    padding: 0px 120px;
+    color: white;
+    font-family: "Open Sans";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(105deg, #001A5D 27.56%, #0037C3 78.25%, #0051EF 99.41%);
+    height: 390px;
+    justify-content: space-between;
+    align-items: center;
+}
+footer span{
+    display: block;
+}
+span i{
+    margin-right: 10px;
+}
+
+.contatos{
+    padding-left: 10px;
+    max-height: 60px;
+    border-left: solid 3px white;
+    flex-direction: column;
+    justify-content: space-around;
+}
