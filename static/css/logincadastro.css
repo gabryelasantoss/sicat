@@ -95,7 +95,6 @@ input{
     font-size: 14px;
     font-weight: 500;
     line-height: 20px; /* 142.857% */
-    text-transform: lowercase;
     border-radius: 10px;
     background: #FFF;
     border: none;

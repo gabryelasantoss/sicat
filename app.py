@@ -91,22 +91,26 @@ def servidor():
 #tutor
 @app.route('/tutor')
 def tutor():
-    return render_template('tutor.html')
+    usuario = request.args.get('user')
+    return render_template('tutor.html', usuario=usuario)
 
 #tutorado
 @app.route('/tutorado')
 def tutorado():
-    return render_template('tutorado.html')
+    usuario = request.args.get('user')
+    return render_template('tutorado.html', usuario=usuario)
 
 #professor
 @app.route('/professor')
 def professor():
-    return render_template('professor.html')
+    usuario = request.args.get('user')
+    return render_template('professor.html', usuario=usuario)
 
 #professor_orientador
 @app.route('/professor_orientador')
 def professor_orientador():
-    return render_template('professor_orientador.html')
+    usuario = request.args.get('user')
+    return render_template('professor_orientador.html', usuario=usuario)
 
 #sessao_tutoria
 @app.route('/sessao_tutoria')
