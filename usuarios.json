@@ -1,0 +1,44 @@
+[
+    {
+        "user": "1",
+        "funcao": "tutor",
+        "senha": "tutor_1",
+        "telefone": "558491111-1111",
+        "email": "tutor1@ifrn.edu.br"
+    },
+    {
+        "user": "2",
+        "funcao": "tutorado",
+        "senha": "tutorado_2",
+        "telefone": "558492222-2222",
+        "email": "tutorado2@ifrn.edu.br"
+    },
+    {
+        "user": "3",
+        "funcao": "servidor",
+        "senha": "servidor_3",
+        "telefone": "558493333-3333",
+        "email": "servidor3@ifrn.edu.br"
+    },
+    {
+        "user": "4",
+        "funcao": "professor",
+        "senha": "professor_4",
+        "telefone": "558494444-4444",
+        "email": "professor4@ifrn.edu.br"
+    },
+    {
+        "user": "5",
+        "funcao": "tutor",
+        "senha": "tutor_5",
+        "telefone": "558495555-5555",
+        "email": "tutor5@ifrn.edu.br"
+    },
+    {
+        "user": "6",
+        "funcao": "tutorado",
+        "senha": "tutorado_6",
+        "telefone": "558496666-6666",
+        "email": "tutorado6@ifrn.edu.br"
+    }
+]

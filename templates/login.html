@@ -3,16 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/logincadastro.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
     <title>Login</title>
 </head>
 <body>
-    <form action="/login" method="post">
-        <label for="user">USUÁRIO</label>
-        <input type="text" id="user">
-        <label for="pin">SENHA</label>
-        <input type="text" id="pin">
-        <button type="submit" class="botao">Acessar sistema</button>
-        <div><span>Esqueceu a senha?</span><span class="separador"></span><span>Criar uma conta</span></div>
-    </form>
+    <svg xmlns="http://www.w3.org/2000/svg" width="789" height="472" viewBox="0 0 789 472" fill="none">
+        <path d="M278.831 287.149C391.026 57.9553 789 -7.99994 789 -7.99994L-25.9999 -8.00001L-26 441.594C-26 484.464 166.636 516.343 278.831 287.149Z" fill="url(#paint0_linear_311_504)"/>
+        <defs>
+        <linearGradient id="paint0_linear_311_504" x1="381.5" y1="-7.99997" x2="381.5" y2="472" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#A9A0DD"/>
+        <stop offset="0.853174" stop-color="#0139B8"/>
+        </linearGradient>
+        </defs>
+    </svg>
+    <div class="frente cadastro column flex">
+        <h1>LOGIN</h1>
+        <form class="flex column" action="/login_autenticacao" method="post">
+            <div class="flex column label">
+                <div class="flex column label">
+                    <div class="flex column">
+                        <label for="user">USUÁRIO</label>
+                        <input type="text" id="user" name="user"> 
+                    </div>
+                    <div class="flex column">
+                        <label for="pin">SENHA</label>
+                        <input type="password" id="pin" name="pin">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="botao">Acessar sistema</button>
+            <div class="recuperacao flex">
+                <span>Esqueceu a senha?</span>
+                <span class="separador"></span>
+                <span>Criar uma conta</span></div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

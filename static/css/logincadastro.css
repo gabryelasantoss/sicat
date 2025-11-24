@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Paytone+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(118deg, #0136B8 0%, #0033AB 72.41%, #6CA0FF 100.99%);
+    font-family: "Instrument Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 900px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    }
+
+h1 {
+    width: 54%;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    }
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-group {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
+
+label{
+    color: #FFF;
+    font-family: "Instrument Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    text-transform: uppercase;
+}
+
+
+    button {
+        margin-top: 20px;
+        padding: 15px 0;
+        width: 408px;
+        height: 52px;
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+        border-radius: 25px;
+        background-color: #fff;
+        color: #0033AB;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: #e6e6e6;
+    }
+
+svg{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+.cadastro{
+    align-items: center;
+}
+.frente{
+    z-index: 2;
+}
+input{
+    width: 408px;
+    height: 52px;
+    color: #000;
+    font-family: "Instrument Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    text-transform: lowercase;
+    border-radius: 10px;
+    background: #FFF;
+    border: none;
+}
+.column{
+    flex-direction: column;
+}
+.labels{
+    gap:40px;
+}
+.label{
+    gap: 21px;
+}
+span{
+    display: block;
+    color: #fff;
+}
+.separador{
+    background-color: #fff;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.recuperacao{
+    align-items: center;
+    column-gap: 24px;
+
+}

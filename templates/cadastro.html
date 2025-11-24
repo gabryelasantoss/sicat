@@ -3,27 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/logincadastro.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
+    <title>Cadastro</title>
 </head>
 <body>
-    <form action="/cadastro" method="post">
-        <label for="user">USUÁRIO</label>
-        <input type="text" id="user" name="usuario"> 
-        <label for="pin">SENHA</label>
-        <input type="password" id="pin" name="senha">
-        <label for="tel">TELEFONE</label>
-        <input type="text" id="tel" name="telefone">
-        <label for="email">EMAIL</label>
-        <input type="text" id="email" name="email">
-        <label for="funcao">FUNÇÃO:</label>
-        <select id="funcao" name="funcao">
-            <option value="tutor">Tutor</option>
-            <option value="tutorado">Tutorado</option>
-            <option value="professor">Professor</option>
-            <option value="servidor">Servidor</option>
-        </select>
-        <button type="submit" class="botao">Cadastrar Usuário</button>
-        <span>Já tem uma conta? Entrar</span>
-    </form>
+    <svg xmlns="http://www.w3.org/2000/svg" width="736" height="474" viewBox="0 0 736 474" fill="none">
+        <path d="M278.831 287.149C391.026 57.9553 735.5 0 735.5 0L0 0C0 0 1.50003 400.629 1.50002 443.5C1.50002 486.371 166.636 516.342 278.831 287.149Z" fill="url(#paint0_linear_220_98)"/>
+        <defs>
+        <linearGradient id="paint0_linear_220_98" x1="381.5" y1="-7.99996" x2="381.5" y2="472" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#A9A0DD"/>
+        <stop offset="0.853174" stop-color="#0139B8"/>
+        </linearGradient>
+        </defs>
+    </svg>
+    <div class="frente cadastro column flex">
+        <h1>Cadastro</h1>
+        <form class="flex column" action="/cadastro" method="post">
+            <div class="flex labels">
+                <div class="flex column label">
+                    <div class="flex column">
+                        <label for="user">USUÁRIO</label>
+                        <input type="text" id="user" name="user"> 
+                    </div>
+                    <div class="flex column">
+                        <label for="pin">SENHA</label>
+                        <input type="password" id="pin" name="pin">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex column">
+                        <label for="telefone">TELEFONE</label>
+                        <input type="text" id="telefone" name="telefone">
+                    </div>
+                    <div class="flex column">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="funcao">FUNÇÃO:</label>
+                <select id="funcao" name="funcao">
+                    <option value="tutor">Tutor</option>
+                    <option value="tutorado">Tutorado</option>
+                    <option value="professor">Professor</option>
+                    <option value="servidor">Servidor</option>
+                </select>
+            </div>
+            <button type="submit" class="botao">Cadastrar Usuário</button>
+            <span>Já tem uma conta? Entrar</span>
+        </form>
+    </div>
 </body>
 </html>
