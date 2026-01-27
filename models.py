@@ -148,32 +148,32 @@ class GrupoEstudos(db.Model):
 
 aluno_disciplina = db.Table(
     'aluno_disciplina',
-    db.Column('aluno_id', db.Integer, db.ForeignKey('alunos.id'), primary_Key=True),
-    db.Column('disciplina_id', db.Integer, db.ForeignKey('disciplinas.id'), primary_Key=True)
+    db.Column('aluno_id', db.Integer, db.ForeignKey('alunos.id'), primary_key=True),
+    db.Column('disciplina_id', db.Integer, db.ForeignKey('disciplinas.id'), primary_key=True)
 )
 
 aluno_sessao_tutoria = db.Table(
     'aluno_sessao_tutoria',
-    db.Column('aluno_id', db.Integer, db.ForeignKey('alunos.id'), primary_Key=True),
-    db.Column('sessao_tutoria_id', db.Integer, db.ForeignKey('sessoes_tutoria.id'), primary_Key=True)
+    db.Column('aluno_id', db.Integer, db.ForeignKey('alunos.id'), primary_key=True),
+    db.Column('sessao_tutoria_id', db.Integer, db.ForeignKey('sessoes_tutoria.id'), primary_key=True)
 )
 
 aluno_grupo_estudo = db.Table(
     'aluno_grupo_estudo',
-    db.Column('aluno_id', db.Integer, db.ForeignKey('alunos.id'), primary_Key=True),
-    db.Column('grupo_estudo_id', db.Integer, db.ForeignKey('grupos_estudo.id'), primary_Key=True)
+    db.Column('aluno_id', db.Integer, db.ForeignKey('alunos.id'), primary_key=True),
+    db.Column('grupo_estudo_id', db.Integer, db.ForeignKey('grupos_estudo.id'), primary_key=True)
 )
 
 professor_disciplina = db.Table(
     'professor_disciplina',
-    db.Column('professor_id', db.Integer, db.ForeignKey('professores.id'), primary_Key=True),
-    db.Column('disciplina_id', db.Integer, db.ForeignKey('disciplinas.id'), primary_Key=True)
+    db.Column('professor_id', db.Integer, db.ForeignKey('professores.id'), primary_key=True),
+    db.Column('disciplina_id', db.Integer, db.ForeignKey('disciplinas.id'), primary_key=True)
 )
 
 professor_orientador_disciplina = db.Table(
     'professor_orientador_disciplina',
-    db.Column('professor_orientador_id', db.Integer, db.ForeignKey('professoresOrientadores.id'), primary_Key=True),
-    db.Column('disciplina_id', db.Integer, db.ForeignKey('disciplinas.id'), primary_Key=True)
+    db.Column('professor_orientador_id', db.Integer, db.ForeignKey('professoresOrientadores.id'), primary_key=True),
+    db.Column('disciplina_id', db.Integer, db.ForeignKey('disciplinas.id'), primary_key=True)
 )
 
 tutor_servidor_etep = db.Table(
