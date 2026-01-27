@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/logincadastro.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
+    <title>Cadastro</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="736" height="474" viewBox="0 0 736 474" fill="none">
+        <path d="M278.831 287.149C391.026 57.9553 735.5 0 735.5 0L0 0C0 0 1.50003 400.629 1.50002 443.5C1.50002 486.371 166.636 516.342 278.831 287.149Z" fill="url(#paint0_linear_220_98)"/>
+        <defs>
+        <linearGradient id="paint0_linear_220_98" x1="381.5" y1="-7.99996" x2="381.5" y2="472" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#A9A0DD"/>
+        <stop offset="0.853174" stop-color="#0139B8"/>
+        </linearGradient>
+        </defs>
+    </svg>
+    <div class="frente cadastro column flex">
+        <h1>Cadastro</h1>
+        <form class="flex column" action="/cadastro" method="post">
+            <div class="flex labels">
+                <div class="flex column label">
+                    <div class="flex column">
+                        <label for="nome">USUÁRIO</label>
+                        <input type="text" id="nome" name="nome"> 
+                    </div>
+                    <div class="flex column">
+                        <label for="senha">SENHA</label>
+                        <input type="password" id="senha" name="senha">
+                    </div>
+                </div>
+                <div class="flex column label">
+                    <div class="flex column">
+                        <label for="tell">TELEFONE</label>
+                        <input type="text" id="tell" name="tell">
+                    </div>
+                    <div class="flex column">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="funcao">FUNÇÃO:</label>
+                <select id="funcao" name="funcao">
+                    <option value="aluno">Aluno</option>
+                    <option value="professor">Professor</option>
+                </select>
+            </div>
+            <button type="submit" class="botao">Cadastrar Usuário</button>
+            <span><a href="/login">Já tem uma conta? Entrar</a></span>
+        </form>
+    </div>
+</body>
+</html>
