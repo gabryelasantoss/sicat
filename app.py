@@ -48,11 +48,33 @@ def login():
 def tutor_home():
     return render_template('tutor/tutor_home.html')
 
+@app.route("/tutor/perfil")
+def perfil():
+    return render_template("tutor/perfil.html")
+
+@app.route("/tutor/historico")
+def historico():
+    return render_template ("tutor/historico.html")
+
+
 
 @app.route('/tutor/tutorias')
 @login_required
 def tutor_tutorias():
     return render_template('tutor/tutor_tutorias.html')
+
+@app.route('/tutorado/home')
+def tutorado_home():
+    return render_template('tutorado/home.html')
+
+@app.route('/tutorado/marcar')
+def tutorado_marcar():
+    return render_template('tutorado/marcar.html')
+
+
+@app.route('/tutorado/historico')
+def tutorado_historico():
+    return render_template('tutorado/historico.html')
 
 
 @app.route('/painel')
